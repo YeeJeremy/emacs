@@ -83,6 +83,9 @@
 (require 'py-autopep8)
 (add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
 
+;; use python3. comment this out for python2
+(setq python-shell-interpreter "/usr/bin/python3")
+
 ;; R
 ;; --------------------------------------
 ;; Need to install ess
@@ -152,3 +155,4 @@
 (setq inferior-julia-program-name "/usr/bin/julia")
 
 ;;; .emacs ends here
+(put 'downcase-region 'disabled nil)
