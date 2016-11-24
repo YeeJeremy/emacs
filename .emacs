@@ -66,6 +66,7 @@
 ;; Code browser
 ;;(require 'ecb)
 ;;(setq ecb-auto-activate 1) 
+(put 'downcase-region 'disabled nil)
 
 ;; PYTHON
 ;; --------------------------------------
@@ -88,7 +89,6 @@
 
 ;; R
 ;; --------------------------------------
-;; Need to install ess
 
 (autoload 'R-mode "ess-site.el" "ESS" t)
 (add-to-list 'auto-mode-alist '("\\.R$" . R-mode))
@@ -155,4 +155,3 @@
 (setq inferior-julia-program-name "/usr/bin/julia")
 
 ;;; .emacs ends here
-(put 'downcase-region 'disabled nil)
